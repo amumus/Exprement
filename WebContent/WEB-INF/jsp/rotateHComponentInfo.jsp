@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<table>
+<tr>
+<td>矫正前图片</td>
+<td>矫正后图片</td>
+<tr/>
+<tr>
+<td><img src="/upload/${requestScope.rotateHComponentObject.image.originalFilename}"></td>
+<td><a href="download?filename=${requestScope.newFilename}">
+<img src="/upload/${requestScope.newFilename}">
+</a></td>
+<tr/>
+<tr>
+<td>&nbsp</td>
+<td>
+<a href="download?filename=${requestScope.newFilename}">
+	点击下载矫正后的图片
+</a>
+</td>
+<tr/>
+</table>
+</body>
+</html>
